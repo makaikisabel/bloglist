@@ -53,6 +53,7 @@ export default function PostPage() {
           height={400}
           alt={`Cover for ${post.title}`}
           priority
+          className={styles.image}
         />
         <p>{post.body}</p>
      

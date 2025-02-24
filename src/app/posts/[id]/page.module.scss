@@ -25,6 +25,11 @@
   font-size: 0.875rem;
 }
 
+.image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
 
 .backButton {
@@ -45,5 +50,9 @@
     background: darken(map-get($colors, 'danger'), 10%);
   }
 }
+
+
+
+/////
 
 

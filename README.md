@@ -1,3 +1,42 @@
+
+##############################      HOLA        ############################
+
+It'is me Abel and this is the description:
+
+ Figma design used: https://www.figma.com/community/file/1216616090937021365
+
+
+Brief explanation of my approach:
+
+Project Structure & Organization
+The project follows a structured Next.js folder hierarchy, with src/app/ for pages and src/components/ for reusable UI elements.
+SCSS modules (.module.scss) are used for component-specific styles.
+Global styles, variables, and mixins are managed in src/styles/
+
+Fetches posts from a mock API (jsonplaceholder.typicode.com).
+Transforms data (adding tags, views, readingTime, date).
+Uses SCSS Grid layout for responsive design.
+Displays posts with an image, metadata, and a "Read more" button.
+
+Fetches individual posts dynamically.
+Displays a large header image, title, and content.
+
+mplements a dark/light mode toggle using localStorage.
+Updates CSS variables in globals.scss dynamically.
+
+
+SCSS variables & mixins for reusable styles.
+Flexbox & Grid layouts for responsiveness.
+BEM-like class naming for structure.
+
+Asynchronous data fetching (useEffect for BlogList, async function for Post).
+Modular, reusable components for maintainability.
+
+
+
+Setup instructions:
+1. Install sassnpm install --save-dev sass and
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
