@@ -1,0 +1,49 @@
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
+
+
+.container {
+  padding: map-get($spacing, 'lg');
+  max-width: map-get($breakpoints, 'large');
+  margin: 0 auto;
+}
+.content {
+  padding: map-get($spacing, 'lg');
+}
+
+.tags {
+  display: flex;
+  gap: map-get($spacing, 'xs');
+  margin-bottom: map-get($spacing, 'sm');
+}
+
+.tag {
+  padding: map-get($spacing, 'xs') map-get($spacing, 'sm');
+  background: map-get($colors, 'primary');
+  color: map-get($colors, 'light');
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+
+
+.backButton {
+  text-decoration: none;
+  display: inline-block;  
+  padding: map-get($spacing, 'sm') map-get($spacing, 'md');
+  font-size: 16px;
+  background: map-get($colors, 'danger');
+  color: map-get($colors, 'light');
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: auto;  
+
+  &:hover {
+    background: darken(map-get($colors, 'danger'), 10%);
+  }
+}
+
+

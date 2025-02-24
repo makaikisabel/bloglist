@@ -1,0 +1,24 @@
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
+
+
+.toggle {
+    position: fixed;
+    top: map-get($spacing, 'lg');
+    right: map-get($spacing, 'lg');
+    padding: map-get($spacing, 'sm');
+    background: map-get($colors, 'light');
+    border: 1px solid map-get($colors, 'secondary');
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    [data-theme='dark'] & {
+      background: map-get($colors, 'dark');
+    }
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
